@@ -3,9 +3,10 @@ import datetime as dt
 import pandas
 import smtplib
 import random
+import os
 
-my_name = "lance8@ethereal.email"
-password = 'RYTgMvDDJpHGx9xEtj'
+my_name = os.environ.get("MY_EMAIL")
+password = os.environ.get("MY_PASSWORD")
 
 # 1. Update the birthdays.csv
 
